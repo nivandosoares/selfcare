@@ -1,32 +1,55 @@
-.header{
-   grid-area: header;
-   border: 1px solid black;
-   border-width: 2px;
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    border: 1px solid black;
+    border-width: 2px;
 }
-.banner{
+.banner {
     grid-area: banner;
-     border: 1px solid red;
-   border-width: 2px;
+    min-width: 580px;
+    min-height: 150px;
+    border: 1px solid black;
 }
-.promo-call{
+.promo-call {
     grid-area: promo-call;
-     border: 1px solid green;
-   border-width: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    border: 1px solid green;
+    border-width: 2px;
 }
-.products{
+.products {
     grid-area: products;
-     border: 1px solid blue;
-   border-width: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    border: 1px solid blue;
+    border-width: 2px;
 }
-.newsletter{
+.product {
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid black;
+    border-width: 2px;
+    color: green;
+}
+.newsletter {
     grid-area: newsletter;
-     border: 1px solid yellow;
-   border-width: 2px;
+    border: 1px solid yellow;
+    border-width: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 }
-.footer{
+.footer {
     grid-area: footer;
-     border: 1px solid gray;
-   border-width: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    border: 1px solid gray;
+    border-width: 2px;
 }
 .container {
     display: grid;
