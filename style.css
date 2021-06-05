@@ -1,15 +1,16 @@
-html, body, .grid-container { height: 100%; margin: 5px; }
+html, body{ height: 100%; margin: 0px; }
 
-.grid-container {
-  display: flex
+.container {
+  display: flex;
   flex-direction: column;
+  margin:10px;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  margin:10px;
 }
 
 
@@ -17,15 +18,15 @@ html, body, .grid-container { height: 100%; margin: 5px; }
     max-width: 100%;
     max-height: 100%;
 }
-.products-grid {
-    display : grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    ". . ."
-    ". . .";
-    grid-area: 3 / 1 / 4 / 5; 
-    grid-gap: 0px;
+.products {
+    display : flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.products > div{
+    flex: 1 1 200px;
+    margin: 10px;
 }
 .image{
     max-width: 100%;
@@ -33,9 +34,7 @@ html, body, .grid-container { height: 100%; margin: 5px; }
     
 }
 .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    
 }
 .contact{
     display: flex;
@@ -43,7 +42,9 @@ html, body, .grid-container { height: 100%; margin: 5px; }
     justify-content: space-between
     
 }
-
+ul{
+    list-style: none;
+}
 
 .footer {
   display: flex;
@@ -52,12 +53,12 @@ html, body, .grid-container { height: 100%; margin: 5px; }
 }
 
 
-.grid-container * {
+.container * {
   border: 1px solid red;
   position: relative;
 }
 
-.grid-container *:after {
+.container *:after {
 
   position: absolute;
   top: 0;
