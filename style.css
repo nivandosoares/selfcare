@@ -7,7 +7,11 @@ body{
     margin: 0px;
     font-family: 'Lato';
 }
-
+.icon{
+    width: auto;
+    height: 30px;
+    align-self: baseline;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,9 @@ a{
   justify-content: space-between;
   margin:10px;
   
+}
+#logo {
+    
 }
 .product{
     width: 250px;
@@ -85,7 +92,6 @@ ul{
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 10px;
-  
   background-color: #F9F9F9
 }
 
