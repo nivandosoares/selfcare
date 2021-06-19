@@ -9,7 +9,7 @@ body{
 }
 .icon{
     width: auto;
-    height: 30px;
+    height: 15px;
     align-self: baseline;
 }
 .container {
@@ -25,11 +25,15 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin:10px;
-  
 }
-#logo {
-    
+.user-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    height: 15px;
 }
 .product{
     width: 250px;
@@ -46,7 +50,7 @@ a{
 .chamada{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+   
 }
 .products {
     display : flex;
